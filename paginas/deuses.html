@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="escuro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuses de Juplutera</title>
+  <link rel="stylesheet" href="../estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header-epic glass">
+    <a href="../index.html" class="botao-voltar">←</a>
+    
+    <div class="logo">
+      <img src="../assets/imagens/logo.png" alt="Logo Juplutera" class="logo-img">
+      <div>
+        <h1 class="titulo-epico" style="font-family: 'Cinzel Decorative', serif; font-size: 2.8rem;">
+          <!-- Título muda conforme a página -->
+          Deuses de Juplutera
+        </h1>
+        <p>Entidades primordiais que forjaram o destino com sangue e estrelas</p>
+      </div>
+    </div>
+    
+    <button id="botao-tema" class="botao-tema" aria-label="Alternar tema">🌙</button>
+  </header>
+
+  <main class="container" style="padding-top: 40px;">
+    <div id="lista-itens" class="container-grid">
+      <!-- Cards carregados dinamicamente com estilo épico -->
+    </div>
+  </main>
+
+  <!-- Modal (mantido igual, só com glass mais forte) -->
+  <div id="modal" class="modal">
+    <div class="modal-conteudo glass" style="padding: 40px; border-radius: 32px;">
+      <span class="fechar">&times;</span>
+      <h2 id="modal-titulo" class="titulo-epico" style="font-family: 'Cinzel Decorative', serif; font-size: 3rem; color: var(--primary);"></h2>
+      <img id="modal-imagem" src="" alt="" style="border-radius: 20px; margin: 20px 0;">
+      <p id="modal-descricao" style="font-size: 1.15rem; line-height: 1.8;"></p>
+      <div id="modal-caracteristicas"></div>
+    </div>
+  </div>
+
+  <footer class="glass">
+    <p>Universo Juplutera © 2025 • Imersão Dev <span style="color: var(--primary)">✦</span></p>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    window.onload = () => carregarItens('deuses'); // mude para 'racas' ou 'regioes' conforme a página
+  </script>
+</body>
+</html>

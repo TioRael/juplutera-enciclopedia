@@ -1,0 +1,489 @@
+/* ==========================================================================
+   ESTILOS GERAIS - JUPLUTERA
+   Descrição: Arquivo principal de estilos com tema Dark/Light,
+   efeitos de Glassmorphism e tipografia responsiva.
+==========================================================================
+*/
+
+/* ============== IMPORTAÇÃO DE FONTES ============== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Cinzel:wght@400;600;700;900&display=swap');
+/* Roboto: Para textos corridos e UI (leiturabilidade).
+   Cinzel: Para títulos épicos e nomes de destaque.
+*/
+
+/* ============== VARIÁVEIS (DESIGN SYSTEM) ============== */
+:root {
+  /* --- Cores da Marca --- */
+  --primary: #00c251;           /* Verde vibrante principal */
+  --primary-dark: #008a3e;      /* Verde escuro para hover/contraste */
+  --primary-glow: rgba(0, 194, 81, 0.4); /* Brilho neon */
+
+  /* --- Tipografia --- */
+  --text-primary: #ffffff;      /* Texto principal */
+  --text-secondary: #e0e0e0;    /* Texto secundário/descrições */
+
+  /* --- Efeito de Vidro (Glassmorphism Escuro) --- */
+  --glass: rgba(20, 20, 20, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.08);
+  --glass-blur: 16px;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* --- Backgrounds --- */
+  --bg-dark: url('assets/imagens/background_escuro.png');
+  --bg-body: #0a0a0a;
+
+  /* --- Propriedades de UI --- */
+  --radius: 24px;               /* Arredondamento padrão de cards */
+  --radius-pill: 50px;          /* Arredondamento total (pílula) */
+  --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Animação suave */
+}
+
+/* --- Tema Claro (Sobrescrita de Variáveis) --- */
+[data-tema="claro"] {
+  --primary: #008a3e;
+  --text-primary: #1d1d1f;
+  --text-secondary: #56565a;
+
+  /* Vidro Claro */
+  --glass: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-highlight: rgba(255, 255, 255, 0.25);
+  --shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+
+  --bg-dark: url('assets/imagens/background_claro.png');
+  --bg-body: #f5f5f7;
+}
+
+/* ============== RESET & BASE ============== */
+*, *::before, *::after { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html {
+  scroll-behavior: smooth; /* Rolagem suave ao clicar em âncoras */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg-body) var(--bg-dark) center/cover fixed;
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  /* Melhor renderização de fontes */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, .titulo-epico {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+img { display: block; max-width: 100%; }
+
+/* ============== COMPONENTE: GLASS PANEL ============== */
+/* Classe utilitária para criar caixas de vidro */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-top: 1px solid var(--glass-highlight);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ============== HEADER & NAVEGAÇÃO ============== */
+header {
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+  max-width: 90%;
+  margin: 0 auto 40px;
+  
+  /* Layout Flex */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  
+  /* Ajuste solicitado: Espaço extra à esquerda para não sobrepor o botão voltar */
+  padding: 16px 32px 16px 60px; 
+
+  /* Estilo Glass */
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  border: 1px solid var(--glass-border);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* Garante que a logo "empurre" um pouco para a direita,
+     caso o padding do header não seja suficiente em telas menores */
+  margin-left: 10px; 
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo h1 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  text-shadow: 0 0 20px var(--primary-glow);
+}
+
+header p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* Botão de troca de tema */
+.botao-tema {
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: grid;
+  place-items: center;
+  color: var(--text-primary);
+}
+
+.botao-tema:hover {
+  background: var(--primary);
+  transform: rotate(20deg) scale(1.1);
+  box-shadow: 0 0 20px var(--primary-glow);
+  color: #fff;
+}
+
+/* Botão voltar (posicionado absolutamente no header) */
+.botao-voltar {
+  position: absolute;
+  left: 20px; /* Ajustei para não ficar colado na borda */
+  font-size: 1.8rem;
+  opacity: 0.8;
+  transition: var(--transition);
+  color: var(--text-primary);
+  z-index: 1001;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.botao-voltar:hover { 
+  opacity: 1; 
+  transform: translateX(-4px); 
+  color: var(--primary);
+}
+
+/* ============== HERO SECTION (TÍTULO PRINCIPAL) ============== */
+.hero-section {
+  text-align: center;
+  padding: 80px 20px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-titulo {
+  font-family: 'Cinzel', serif; /* Mantive Cinzel, mas verifique se quis dizer 'Cinzel Decorative' se tiver importado */
+  
+  /* Ajuste Solicitado: Tamanho da fonte reduzido.
+     Antes: clamp(3.5rem, 10vw, 7rem) -> Gigante
+     Agora: clamp(2.5rem, 6vw, 4rem) -> Equilibrado
+  */
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  
+  font-weight: 900;
+  
+  /* Efeito de Gradiente no Texto */
+  background: linear-gradient(180deg, #ffffff, #aaaaaa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+[data-tema="claro"] .hero-titulo {
+  background: linear-gradient(180deg, #000000, #333333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-descricao {
+  font-size: 1.2rem; /* Levemente ajustado para legibilidade */
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: var(--text-secondary);
+  text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.decorative-line {
+  width: 100px;
+  height: 4px;
+  background: var(--primary);
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+/* ============== CARDS GRID ============== */
+.cards-section {
+  padding: 40px 20px;
+}
+
+.container-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  /* Grid responsivo automático */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* --- Card Base (Estilo Épico) --- */
+.card-epic, .card-dinamico {
+  position: relative;
+  height: 580px; /* Altura fixa para uniformidade */
+  border-radius: 28px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid transparent; /* Reserva espaço para borda no hover */
+  background: var(--glass);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  transition: var(--transition);
+}
+
+/* Gradiente Overlay (Escurece o fundo para o texto aparecer) */
+.card-epic::before, .card-dinamico::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, 
+    rgba(0, 194, 81, 0.15) 0%, 
+    rgba(0, 0, 0, 0.5) 50%, 
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  z-index: 1;
+  opacity: 0.7; /* Começa semi-visível */
+  transition: opacity 0.6s ease;
+}
+
+.card-epic:hover::before, .card-dinamico:hover::before {
+  opacity: 1;
+}
+
+/* Imagem de Fundo */
+.card-imagem, .card-dinamico img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-epic:hover .card-imagem, 
+.card-dinamico:hover img {
+  transform: scale(1.15); /* Zoom suave na imagem */
+}
+
+/* Conteúdo do Card (Texto) */
+.card-conteudo-epic, .card-dinamico-conteudo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  z-index: 2;
+  transform: translateY(20px); /* Levemente deslocado para baixo */
+  transition: transform 0.5s ease;
+}
+
+.card-epic:hover .card-conteudo-epic,
+.card-dinamico:hover .card-dinamico-conteudo {
+  transform: translateY(0); /* Sobe ao passar o mouse */
+}
+
+.card-epic h3, .card-dinamico h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+  line-height: 1.1;
+}
+
+/* Detalhe da Linha Verde no Card */
+.linha-verde {
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  margin: 16px 0;
+  border-radius: 2px;
+  box-shadow: 0 0 15px var(--primary-glow);
+  transition: width 0.6s ease;
+}
+
+.card-epic:hover .linha-verde,
+.card-dinamico:hover .linha-verde {
+  width: 140px; /* Cresce ao passar o mouse */
+}
+
+.card-epic p, .card-dinamico p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Hover Geral do Card */
+.card-epic:hover, .card-dinamico:hover {
+  border-color: var(--primary);
+  transform: translateY(-12px) scale(1.01);
+  box-shadow: 0 30px 60px rgba(0, 194, 81, 0.25);
+}
+
+/* Glow interno no hover (Opcional, mas estiloso) */
+.card-glow {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 40px rgba(0, 194, 81, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 3;
+  pointer-events: none;
+}
+.card-epic:hover .card-glow { opacity: 1; }
+
+
+/* ============== FOOTER ============== */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+footer span { 
+  color: var(--primary); 
+  font-weight: 600; 
+}
+
+/* ============== MODAL ============== */
+.modal {
+  display: none; /* Controlado via JS */
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85); /* Fundo mais escuro para foco */
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-conteudo {
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--glass);
+  border-radius: var(--radius);
+  padding: 32px;
+  position: relative;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+.fechar {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+  color: var(--text-primary);
+}
+
+.fechar:hover { 
+  opacity: 1; 
+  color: var(--primary); 
+  transform: rotate(90deg);
+}
+
+#modal-imagem {
+  width: 100%;
+  border-radius: var(--radius);
+  margin: 20px 0;
+  border: 1px solid var(--glass-border);
+}
+
+/* ============== RESPONSIVIDADE ============== */
+
+/* Tablets e Mobile Grande */
+@media (max-width: 900px) {
+  .hero-titulo {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+  
+  header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 30px;
+  }
+  
+  /* No mobile, o botão voltar fica no topo esquerdo absoluto,
+     então damos padding no topo do header para compensar se necessário */
+  .botao-voltar {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .logo { margin-left: 0; }
+}
+
+/* Mobile Pequeno */
+@media (max-width: 600px) {
+  .container-grid {
+    grid-template-columns: 1fr; /* Um card por linha */
+  }
+
+  .card-epic, .card-dinamico {
+    height: 480px; /* Cards menores em altura */
+  }
+
+  .logo h1 { font-size: 1.3rem; }
+  
+  header {
+    width: 95%;
+    padding-top: 50px; /* Espaço para o botão voltar não ficar em cima da logo */
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "sobek-chronos",
+    "nome": "Sobek Chronos",
+    "descricao": "Guardião do Tempo e senhor das Areias Eternas. Uma entidade que enxerga passado, presente e futuro como um fluxo único.",
+    "regiao": "Spharadis",
+    "imagem": "../assets/imagens/deuses/sobek.jpg",
+    "caracteristicas": [
+      "Domínio: Tempo, Destino, Areia"
+    ]
+  },
+  {
+    "id": "gortavok",
+    "nome": "Gor’tavok",
+    "descricao": "Senhor da Guerra e da Fúria Primordial. Vive pelo combate, honra e domínio absoluto sobre os campos de batalha.",
+    "regiao": "Draxônia",
+    "imagem": "../assets/imagens/deuses/gortavok.jpg",
+    "caracteristicas": [
+      "Domínio: Guerra, Força, Honra"
+    ]
+  },
+  {
+    "id": "thomelion",
+    "nome": "Thomelion",
+    "descricao": "Deus da Natureza, Vida e Harmonia selvagem. Representa renascimento e o ciclo eterno que molda a vida em Verdântia.",
+    "regiao": "Verdântia",
+    "imagem": "../assets/imagens/deuses/thomelion.jpg",
+    "caracteristicas": [
+      "Domínio: Natureza, Vida, Equilíbrio"
+    ]
+  },
+  {
+    "id": "lithuria",
+    "nome": "Lithuria",
+    "descricao": "Deusa da Morte, das Sombras e da Transição. Guardiã dos mistérios do fim e dos segredos escondidos no véu noturno.",
+    "regiao": "Nocturnia",
+    "imagem": "../assets/imagens/deuses/lithuria.jpg",
+    "caracteristicas": [
+      "Domínio: Morte, Sombras, Segredos"
+    ]
+  },
+  {
+    "id": "lucius",
+    "nome": "Lucius",
+    "descricao": "Deus da Alegria, Harmonia e Celebração. A luz que une povos, inspira paz e fortalece laços.",
+    "regiao": "Harmonia",
+    "imagem": "../assets/imagens/deuses/lucius.jpg",
+    "caracteristicas": [
+      "Domínio: Alegria, Harmonia, Música"
+    ]
+  },
+  {
+    "id": "balamark",
+    "nome": "Balamark",
+    "descricao": "O Senhor das Correntes, deus da Opressão, Dor e Sacrifício. Governante do sofrimento e dos pactos quebrados.",
+    "regiao": "Corrosia",
+    "imagem": "../assets/imagens/deuses/balamark.jpg",
+    "caracteristicas": [
+      "Domínio: Opressão, Dor, Escravidão"
+    ]
+  },
+  {
+    "id": "runathar",
+    "nome": "Runathar",
+    "descricao": "Deus do Progresso, Magia e Inovação. Sua mente é uma fonte infinita de descobertas e avanços arcanos.",
+    "regiao": "Arcanópolis",
+    "imagem": "../assets/imagens/deuses/runathar.jpg",
+    "caracteristicas": [
+      "Domínio: Magia, Progresso, Tecnologia"
+    ]
+  },
+  {
+    "id": "elunaria",
+    "nome": "Elunaria",
+    "descricao": "Deusa da Lua, dos Sonhos e da Inspiração. Protetora dos viajantes noturnos e dos que buscam sabedoria no silêncio.",
+    "regiao": "Lunaria",
+    "imagem": "../assets/imagens/deuses/elunaria.jpg",
+    "caracteristicas": [
+      "Domínio: Lua, Sonhos, Mistério"
+    ]
+  },
+  {
+    "id": "isgryd",
+    "nome": "Isgryd",
+    "descricao": "Deusa ancestral do Gelo, da Resistência e da Guerra Glacial. Forte, implacável e honrada.",
+    "regiao": "Glacialand",
+    "imagem": "../assets/imagens/deuses/isgryd.jpg",
+    "caracteristicas": [
+      "Domínio: Gelo, Guerra Ancestral, Resistência"
+    ]
+  },
+  {
+    "id": "calisstra",
+    "nome": "Calisstra",
+    "descricao": "Deusa Sombria dos Mares e Abismos. Senhora das marés negras e dos segredos afogados.",
+    "regiao": "Abssalia",
+    "imagem": "../assets/imagens/deuses/calisstra.jpg",
+    "caracteristicas": [
+      "Domínio: Mares de Juplutera, Abismos, Corrupção Oceânica"
+    ]
+  },
+  {
+    "id": "valorian",
+    "nome": "Valorian",
+    "descricao": "Deus da Riqueza e humanidade. Radiante como o amanhecer e implacável contra as trevas.",
+    "regiao": "Radiantia",
+    "imagem": "../assets/imagens/deuses/valorian.jpg",
+    "caracteristicas": [
+      "Domínio: Riqueza, Justiça, Energia Solar"
+    ]
+  },
+  {
+    "id": "theriel",
+    "nome": "Theriel",
+    "descricao": "Deus do Vento e Sagrado. O coração incandescente dos céus de Juplutera.",
+    "regiao": "Flammarion",
+    "imagem": "../assets/imagens/deuses/theriel.jpg",
+    "caracteristicas": [
+      "Domínio: Luz, Vento, Sagrado"
+    ]
+  }
+]

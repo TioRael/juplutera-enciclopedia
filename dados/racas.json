@@ -1,0 +1,146 @@
+[
+  {
+    "id": "reptilianos",
+    "nome": "Reptilianos",
+    "descricao": "Reis naturais do deserto, resistentes ao calor e à magia temporal. Vivem em cidades escondidas na areia e seguem rigidamente os ciclos de Sobek Chronos.",
+    "regiao": "Spharadis",
+    "imagem": "../assets/imagens/racas/reptilianos.jpg",
+    "caracteristicas": [
+      "Escamas que refletem ataques temporais",
+      "Visão que atravessa ilusões do tempo",
+      "Longevidade extrema"
+    ]
+  },
+  {
+    "id": "orcs",
+    "nome": "Orcs",
+    "descricao": "Forjados na brutalidade, disciplinados pela guerra. Usam armaduras pesadas de aço draxoniano e lutam pela glória de Gor’tavok.",
+    "regiao": "Draxônia",
+    "imagem": "../assets/imagens/racas/orcs.jpg",
+    "caracteristicas": [
+      "Regeneração acelerada em combate",
+      "Resistência elevada ao fogo e dor",
+      "Cultura baseada em duelos e glória"
+    ]
+  },
+  {
+    "id": "feraxianos",
+    "nome": "Feraxianos",
+    "descricao": "Criaturas animais humanoides. São pacíficos, mas devastadores quando Verdântia está em perigo. Guardiões naturais da Árvore Primordial.",
+    "regiao": "Verdântia",
+    "imagem": "../assets/imagens/racas/feraxianos.jpg",
+    "caracteristicas": [
+      "Conexão espiritual com plantas e animais",
+      "Força e agilidade sobre-humanas",
+      "Cura natural através da energia da floresta"
+    ]
+  },
+  {
+    "id": "demonios",
+    "nome": "Demônio",
+    "descricao": "Seres sombrios de Nocturnia, alimentam-se de energia vital e vivem em clãs antigos que veneram Lithuria.",
+    "regiao": "Nocturnia",
+    "imagem": "../assets/imagens/racas/demonios.jpg",
+    "caracteristicas": [
+      "Regeneração extrema na escuridão",
+      "Habilidade de manipular sombras",
+      "Imortalidade condicional"
+    ]
+  },
+  {
+    "id": "elfos",
+    "nome": "Elfos",
+    "descricao": "Uma raça diversa, pacífica e luminosa. Vivem em sintonia com a música e a alegria espalhadas por toda Harmonia.",
+    "regiao": "Harmonia",
+    "imagem": "../assets/imagens/racas/elfos.jpg",
+    "caracteristicas": [
+      "Magia canalizada através da música",
+      "Grande capacidade diplomática",
+      "Aura calmante natural"
+    ]
+  },
+  {
+    "id": "goblin",
+    "nome": "Goblins",
+    "descricao": "Seres marcados pela dureza da vida em Corrosia. Seus corpos são adaptados ao metal, poeira e ao domínio de Balamark.",
+    "regiao": "Corrosia",
+    "imagem": "../assets/imagens/racas/goblins.jpg",
+    "caracteristicas": [
+      "Pele resistente a metais tóxicos",
+      "Baixa sensibilidade à dor",
+      "Capacidade de enxergar em áreas poluídas"
+    ]
+  },
+  {
+    "id": "gnomos",
+    "nome": "Gnomos",
+    "descricao": "Seres profundamente ligados à magia e à tecnologia.",
+    "regiao": "Arcanópolis",
+    "imagem": "../assets/imagens/racas/gnomos.jpg",
+    "caracteristicas": [
+      "Mentes altamente inteligentes",
+      "Afinidade natural com runas e artefatos",
+      "Capacidade de armazenar energia mágica"
+    ]
+  },
+  {
+    "id": "minotauros",
+    "nome": "Minotauros",
+    "descricao": "Habitantes de Lunaria, possuem corpos robustos e grande sensibilidade à magia lunar.",
+    "regiao": "Lunaria",
+    "imagem": "../assets/imagens/racas/minotauros.jpg",
+    "caracteristicas": [
+      "Habilidade de manipular sonhos",
+      "Corpos que brilham sob a lua",
+      "Telepatia leve"
+    ]
+  },
+  {
+    "id": "gigantes",
+    "nome": "Gigantes",
+    "descricao": "Guerreiros forjados no gelo eterno de Glacialand. Frio para eles é apenas mais uma arma.",
+    "regiao": "Glacialand",
+    "imagem": "../assets/imagens/racas/gigantes.jpg",
+    "caracteristicas": [
+      "Imunidade ao frio extremo",
+      "Força física monumental",
+      "Batalhas rituais ancestrais"
+    ]
+  },
+  {
+    "id": "sereias",
+    "nome": "Sereias",
+    "descricao": "Criaturas do oceano profundo. Adaptados aos mistérios e horrores de Abssalia, possuem corpos aquáticos e sentidos sobre-humanos.",
+    "regiao": "Abssalia",
+    "imagem": "../assets/imagens/racas/sereias.jpg",
+    "caracteristicas": [
+      "Respiração subaquática",
+      "Visão perfeita na escuridão total",
+      "Comunicação por ondas sonoras"
+    ]
+  },
+  {
+    "id": "humanos",
+    "nome": "Humanos",
+    "descricao": "Povo versátil e determinado de Radiantia. Carregam a luz do deus Solarius e a disciplina da região luminosa.",
+    "regiao": "Radiantia",
+    "imagem": "../assets/imagens/racas/humanos.jpg",
+    "caracteristicas": [
+      "Grande adaptabilidade",
+      "Afinidade com magia solar",
+      "Disciplina militar rigorosa"
+    ]
+  },
+  {
+    "id": "anjos",
+    "nome": "Anjos",
+    "descricao": "Seres alados de Aetherius, feitos de vento, luz e essência celestial. Protetores naturais das ilhas flutuantes.",
+    "regiao": "Aetherius",
+    "imagem": "../assets/imagens/racas/anjos.jpg",
+    "caracteristicas": [
+      "Voo natural com asas etéreas",
+      "Corpos leves como o ar",
+      "Manipulação de ventos divinos"
+    ]
+  }
+]

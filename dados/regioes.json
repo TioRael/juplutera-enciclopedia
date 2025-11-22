@@ -1,0 +1,158 @@
+[
+  {
+    "id": "spharadis",
+    "nome": "Spharadis",
+    "descricao": "Um imenso deserto dourado onde o tempo flui de forma instável. Lar dos Reptilianos e de tempestades temporais que distorcem passado e futuro.",
+    "deus": "Sobek Chronos",
+    "imagem": "../assets/imagens/regioes/spharadis.jpg",
+    "caracteristicas": [
+      "Tempestades temporais que alteram a realidade",
+      "Ruínas de várias eras misturadas",
+      "Oásis que surgem e desaparecem",
+      "Areias com energia cronológica"
+    ]
+  },
+  {
+    "id": "draxonia",
+    "nome": "Draxônia",
+    "descricao": "Terra selvagem de fogo, guerra e brutalidade. Dominada por Orcs forjados na batalha e pelas montanhas vivas de magma.",
+    "deus": "Gor’tavok",
+    "imagem": "../assets/imagens/regioes/draxonia.jpg",
+    "caracteristicas": [
+      "Vulcões ativos e rios de lava",
+      "Campos de batalha eternos",
+      "Fortalezas de rocha negra",
+      "Céu avermelhado pela fumaça"
+    ]
+  },
+  {
+    "id": "verdantia",
+    "nome": "Verdântia",
+    "descricao": "Floresta colosal vibrante de energia primitiva. Cada folha respira vida, e seus guardiões protegem a Árvore Primordial.",
+    "deus": "Thomelion",
+    "imagem": "../assets/imagens/regioes/verdantia.jpg",
+    "caracteristicas": [
+      "Árvores enormes que tocam o céu",
+      "Bioluminescência natural",
+      "Criaturas místicas e plantas vivas",
+      "A Árvore Primordial no coração da região"
+    ]
+  },
+  {
+    "id": "nocturnia",
+    "nome": "Nocturnia",
+    "descricao": "Um reino mergulhado em sombras eternas. Criaturas noturnas, demônios e vampiros vagam por uma terra onde o sol nunca domina.",
+    "deus": "Lithuria",
+    "imagem": "../assets/imagens/regioes/nocturnia.jpg",
+    "caracteristicas": [
+      "Florestas escuras e silenciosas",
+      "Vulcão que cospe plasma sombrio",
+      "Cavernas que levam ao Submundo",
+      "Torres negras que vigiam a noite eterna"
+    ]
+  },
+  {
+    "id": "harmonia",
+    "nome": "Harmonia",
+    "descricao": "Uma terra diversa e pacífica onde música, arte e magia leve compõem o cotidiano. Refúgio de povos unidos pela celebração da vida.",
+    "deus": "Lucius",
+    "imagem": "../assets/imagens/regioes/harmonia.jpg",
+    "caracteristicas": [
+      "Ilhas paradisíacas e lagos cristalinos",
+      "Montanhas geladas ao norte",
+      "Pântanos cheios de magia suave",
+      "Templos sonoros que ecoam música divina"
+    ]
+  },
+  {
+    "id": "corrosia",
+    "nome": "Corrosia",
+    "descricao": "Um território corrompido por opressão, sofrimento e tirania. Suas terras são marcadas por minas exaustivas e desertos metálicos.",
+    "deus": "Balamark",
+    "imagem": "../assets/imagens/regioes/corrosia.jpg",
+    "caracteristicas": [
+      "Crateras gigantes e rachaduras profundas",
+      "Minas subterrâneas intermináveis",
+      "Deserto de ferro cortante",
+      "Castelos escuros governados pela tirania"
+    ]
+  },
+  {
+    "id": "arcanopolis",
+    "nome": "Arcanópolis",
+    "descricao": "O maior centro mágico e tecnológico de Juplutera. Runas, máquinas e feitiços moldam uma sociedade avançada e ambiciosa.",
+    "deus": "Runathar",
+    "imagem": "../assets/imagens/regioes/arcanopolis.jpg",
+    "caracteristicas": [
+      "Torres mágicas que flutuam no céu",
+      "Cidades iluminadas por energia arcana",
+      "Laboratórios secretos e interditos",
+      "Porto oculto entre montanhas"
+    ]
+  },
+  {
+    "id": "lunaria",
+    "nome": "Lunaria",
+    "descricao": "Reino místico banhado pela luz prateada da lua. Suas paisagens oníricas inspiram poetas, magos e viajantes dos sonhos.",
+    "deus": "Elunaria",
+    "imagem": "../assets/imagens/regioes/lunaria.jpg",
+    "caracteristicas": [
+      "Florestas brilhantes sob a luz lunar",
+      "Lagos que refletem sonhos",
+      "Ruínas de templos lunares antigos",
+      "Criaturas que surgem apenas à noite"
+    ]
+  },
+  {
+    "id": "glacialand",
+    "nome": "Glacialand",
+    "descricao": "Um império congelado onde a guerra ancestral encontra o gelo eterno. Aqui, a sobrevivência é um teste constante de força.",
+    "deus": "Isgryd",
+    "imagem": "../assets/imagens/regioes/glacialand.jpg",
+    "caracteristicas": [
+      "Montanhas congeladas gigantescas",
+      "Batalhas sob nevascas violentas",
+      "Bestas de gelo ancestrais",
+      "Fortes nórdicos esculpidos no gelo"
+    ]
+  },
+  {
+    "id": "abssalia",
+    "nome": "Abssalia",
+    "descricao": "O reino submerso dos mares profundos e abismos insondáveis. Monstros oceânicos e cultos antigos reinam nas sombras líquidas.",
+    "deus": "Calisstra",
+    "imagem": "../assets/imagens/regioes/abssalia.jpg",
+    "caracteristicas": [
+      "Cidades submersas abandonadas",
+      "Abismos que nunca foram explorados",
+      "Criaturas marinhas colossais",
+      "Redemoinhos negros que engolem navios"
+    ]
+  },
+  {
+    "id": "radiantia",
+    "nome": "Radiantia",
+    "descricao": "Terra da luz eterna, justiça e pureza. Campos dourados e cidades brancas brilham sob o domínio solar.",
+    "deus": "Valorian",
+    "imagem": "../assets/imagens/regioes/radiantia.jpg",
+    "caracteristicas": [
+      "Campos dourados infinitos",
+      "Templos gigantes dedicados ao sol",
+      "Exércitos luminosos disciplinados",
+      "Céu sempre claro e radiante"
+    ]
+  },
+  {
+    "id": "aetherius",
+    "nome": "Aetherius",
+    "descricao": "Reino celestial suspenso nos céus, moldado por ventos divinos e ilhas flutuantes. Um santuário para seres alados e guardiões do firmamento.",
+    "deus": "Theriel",
+    "imagem": "../assets/imagens/regioes/aetherius.jpg",
+    "caracteristicas": [
+      "Ilhas flutuantes conectadas por pontes de vento",
+      "Cidades erguidas em nuvens condensadas",
+      "Tempestades elétricas azuladas",
+      "Santuários dedicados aos guardiões celestes"
+    ]
+  }
+]
